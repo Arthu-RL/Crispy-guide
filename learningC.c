@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <bits/stdc++.h>
+#include "learningC_import.c"
+
+
+int main()
+{
+    time_t start = time(NULL);
+    double time_taken = 0.0;
+    int num = 0;
+    char str[] = {"Hello, World"};
+    float arr[4] = {};
+
+    printf("\n");
+    printf("Hello World\n\n");
+    printf("%d\n", getintnum(5));
+    printf("%u\n", getuintnum(32));
+    printf("%f\n", getfloatnum(6.7));
+    printf("%c\n", getchar('d'));
+    printf("%s\n", getstring(str));
+
+    printf("Enter with your favorite number: ");
+    scanf("%d", &num);
+    printf("Your favorite number is %d", getintnum(num));
+    printf("\n\n");
+
+    printf("\n\nThe size of an int variable is %llu bytes", sizeof(int));
+    printf("\n\nThe size of an float variable is %llu bytes", sizeof(float));
+    printf("\n\nThe size of an double variable is %llu bytes", sizeof(double));
+    printf("\n\nThe size of an char type variable is %llu bytes", sizeof(char));
+    printf("\n\nThe size of an char type array variable is %llu bytes\n\n", sizeof(str));
+
+    time_t end = time(NULL);
+    time_taken = double(end - start);
+    printf("The time taken by execution = %f\n", time_taken);
+
+    return 0;
+}
