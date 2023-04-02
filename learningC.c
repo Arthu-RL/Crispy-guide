@@ -1,6 +1,6 @@
 // Importing modules
 #include <stdio.h>
-#include <bits/stdc++.h>
+#include <time.h>
 
 // importing my module
 #include "learningC_import.c"
