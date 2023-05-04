@@ -39,7 +39,7 @@ int main()
 
     printf("\nName: %s\nHealth: %d\nXP: %d\n\n", Mage.name, Mage.health, Mage.xp);
 
-    printf("\n %i", i);
+    printf("\nValue of i now: %d\n\n", i);
     for (int i = 0; i < 5; i++)
     {
         foo();
